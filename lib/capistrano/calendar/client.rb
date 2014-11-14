@@ -1,5 +1,3 @@
-require 'capistrano/errors'
-
 module Capistrano
   module Calendar
     module Client
