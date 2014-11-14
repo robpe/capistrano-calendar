@@ -27,7 +27,7 @@ module Capistrano
           :calendar_event_time,
           :calendar_event_status,
         ].inject({}) { |result, key|
-          result[key] = hash[key] if hash.exists?(key)
+          result[key] = hash.fetch(key)
           result
         }
       end
